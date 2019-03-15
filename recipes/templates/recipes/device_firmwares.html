@@ -1,0 +1,14 @@
+{% extends 'recipes/base_recipes.html' %}
+
+{% block title %}
+    Device Firmwares
+{% endblock %}
+
+{% block content %}
+
+    <h1 class="mb-5">Device Firmwares:</h1>
+    {% for device_firmware in device_firmwares_all %}
+        {% include 'recipes/include/device_firmware_card.html' %}
+    {% endfor %}
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'recipes/base_recipes.html' %}
+
+{% block title %}
+    Image Variants
+{% endblock %}
+
+{% block content %}
+
+    <h1 class="mb-5">Image Variants:</h1>
+    {% for image_variant in image_variants_all %}
+			<p>{{ image_variant.id }}</p>
+    {% endfor %}
+
+{% endblock %}

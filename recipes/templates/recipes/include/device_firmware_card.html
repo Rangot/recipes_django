@@ -1,0 +1,13 @@
+<div class="card mb-4">
+  <div class="card-header">
+     ID: {{ device_firmware.id }}
+  </div>
+      <div class="card-body">
+        <p class="card-text">Major_version: {{ device_firmware.major_version }}</p>
+	    <p class="card-text">Minor_version: {{ device_firmware.minor_version }}</p>
+	    <p class="card-text">Tag: {{ device_firmware.tag }}</p>
+        <p class="card-text">En: {{ device_firmware.en|truncatewords:15 }}</p>
+	    <p class="card-text">Ru: {{ device_firmware.ru|truncatewords:15 }}</p>
+        <a href="" class="btn btn-primary">Edit</a>
+      </div>
+</div>
